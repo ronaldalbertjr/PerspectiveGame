@@ -135,7 +135,7 @@ RectTransform:
   m_RootOrder: 1
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 57, y: 208}
+  m_AnchoredPosition: {x: 57, y: 216}
   m_SizeDelta: {x: 113, y: 43}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &14915890
@@ -567,7 +567,7 @@ RectTransform:
   m_RootOrder: 2
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 57.0799866, y: 88}
+  m_AnchoredPosition: {x: 57, y: 69}
   m_SizeDelta: {x: 112.850006, y: 41}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &313726421
@@ -1173,7 +1173,7 @@ RectTransform:
   m_RootOrder: 0
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 273, y: 311.999969}
+  m_AnchoredPosition: {x: 273, y: 357}
   m_SizeDelta: {x: 543, y: 64}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1079841729
@@ -1407,7 +1407,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 2
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 16436803}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1

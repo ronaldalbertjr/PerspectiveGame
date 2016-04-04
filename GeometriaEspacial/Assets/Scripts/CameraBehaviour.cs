@@ -1,8 +1,10 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class CameraBehaviour : MonoBehaviour 
 {
+    public Text view;
     bool right, left, up, front, back = false;
     void Start () 
     {
@@ -12,6 +14,7 @@ public class CameraBehaviour : MonoBehaviour
     {
         if (front)
         {
+            view.text = "Front";
             this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(9f, 5f, 12f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(0f, 270f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.W))
@@ -29,6 +32,7 @@ public class CameraBehaviour : MonoBehaviour
         }
         else if (up)
         {
+            view.text = "Up";
             this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-4f, 13f, 12f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(90f, 270f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.S))
@@ -50,6 +54,7 @@ public class CameraBehaviour : MonoBehaviour
         }
         else if (back)
         {
+            view.text = "Back";
             this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-16f, 5f, 12f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(0f, 90f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.W))
@@ -67,6 +72,7 @@ public class CameraBehaviour : MonoBehaviour
         }
         else if (left)
         {
+            view.text = "Left";
             this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-5f, 2.5f, -10f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(0f, 0f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.W))
@@ -84,6 +90,7 @@ public class CameraBehaviour : MonoBehaviour
         }
         else if (right)
         {
+            view.text = "Right";
             this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-5f, 2.5f, 25f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(0f, 180f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.W))

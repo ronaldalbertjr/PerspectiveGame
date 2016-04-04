@@ -7,7 +7,7 @@ public class Win : MonoBehaviour
     {
         if(col.gameObject.name == "Char")
         {
-            Application.LoadLevel("Cena2");
+            Application.LoadLevel(Application.loadedLevel + 1);
         }
     }
 
