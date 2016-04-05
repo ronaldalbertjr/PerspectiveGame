@@ -36,20 +36,30 @@ public class CharacterBehaviour : MonoBehaviour
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.left;
-                    newrotation = this.transform.eulerAngles + new Vector3(0f, 0f, 90f);
+                    if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
+                    {
+                        newrotation.z += 90f;
+                    }
+                    else if (this.transform.eulerAngles.x == 0 || this.transform.eulerAngles.x == 180)
+                    {
+                        newrotation.y += 90f;
+                    }
                 }
                 alreadystarted = true;
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
-                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
-                {
-                    this.transform.eulerAngles = new Vector3(0f, 0f, 0f);
-                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.right;
-                    newrotation = this.transform.eulerAngles + new Vector3(0f, 0f, -90f);
+                    if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
+                    {
+                        newrotation.z += -90f;
+                    }
+                    else if (this.transform.eulerAngles.x == 0 || this.transform.eulerAngles.x == 180)
+                    {
+                        newrotation.y += -90f;
+                    }
                 }
                 alreadystarted = true;
             }
@@ -61,7 +71,7 @@ public class CharacterBehaviour : MonoBehaviour
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.forward;
-                    newrotation = this.transform.eulerAngles + new Vector3(90f, 0f, 0f);
+                    newrotation.x += 90f;
                 }
                 alreadystarted = true;
             }
@@ -70,7 +80,7 @@ public class CharacterBehaviour : MonoBehaviour
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.back;
-                    newrotation = this.transform.eulerAngles + new Vector3(-90f, 0f, 0f);
+                    newrotation.x += -90f;
                 }
                 alreadystarted = true;
             }
@@ -78,8 +88,8 @@ public class CharacterBehaviour : MonoBehaviour
          qr = Quaternion.Euler(newrotation);
         if (alreadystarted)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, newposition, 0.7f);
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, qr, 0.7f);
+            this.transform.position = Vector3.Slerp(this.transform.position, newposition, 0.5f);
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, qr, 0.5f);
         }
    }
 }
