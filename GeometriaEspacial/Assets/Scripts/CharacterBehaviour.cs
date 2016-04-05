@@ -29,20 +29,16 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
-                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
-                {
-                    this.transform.eulerAngles = new Vector3(0f, 0f, 0f);
-                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.left;
                     if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                     {
-                        newrotation.z += 90f;
+                        newrotation += new Vector3(0f, 90f, 0f);
                     }
-                    else if (this.transform.eulerAngles.x == 0 || this.transform.eulerAngles.x == 180)
+                    else
                     {
-                        newrotation.y += 90f;
+                        newrotation += new Vector3 (0f, 0f, 90f);
                     }
                 }
                 alreadystarted = true;
@@ -54,11 +50,11 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.right;
                     if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                     {
-                        newrotation.z += -90f;
+                        newrotation += new Vector3(0f, -90f, 0f);
                     }
-                    else if (this.transform.eulerAngles.x == 0 || this.transform.eulerAngles.x == 180)
+                    else
                     {
-                        newrotation.y += -90f;
+                        newrotation += new Vector3(0f, 0f, -90f);
                     }
                 }
                 alreadystarted = true;
@@ -71,7 +67,7 @@ public class CharacterBehaviour : MonoBehaviour
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.forward;
-                    newrotation.x += 90f;
+                    newrotation += new Vector3(90f, 0, 0f);
                 }
                 alreadystarted = true;
             }
@@ -80,7 +76,7 @@ public class CharacterBehaviour : MonoBehaviour
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.back;
-                    newrotation.x += -90f;
+                    newrotation += new Vector3(-90f, 0f, 0f);
                 }
                 alreadystarted = true;
             }
