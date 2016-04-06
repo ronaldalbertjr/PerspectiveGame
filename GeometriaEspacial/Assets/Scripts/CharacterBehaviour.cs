@@ -29,33 +29,27 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.UpArrow))
             {
+                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
+                {
+                    newrotation.x = 0;
+                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.left;
-                    if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
-                    {
-                        newrotation += new Vector3(0f, 90f, 0f);
-                    }
-                    else
-                    {
-                        newrotation += new Vector3 (0f, 0f, 90f);
-                    }
+                    newrotation.z += 90f;
                 }
                 alreadystarted = true;
             }
             else if (Input.GetKey(KeyCode.DownArrow))
             {
+                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
+                {
+                    newrotation.x = 0;
+                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.right;
-                    if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
-                    {
-                        newrotation += new Vector3(0f, -90f, 0f);
-                    }
-                    else
-                    {
-                        newrotation += new Vector3(0f, 0f, -90f);
-                    }
+                    newrotation.z += -90f;
                 }
                 alreadystarted = true;
             }
@@ -64,19 +58,27 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
+                if (this.transform.eulerAngles.z == 90 || this.transform.eulerAngles.z == 270)
+                {
+                    newrotation.z = 0;
+                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.forward;
-                    newrotation += new Vector3(90f, 0, 0f);
+                    newrotation.x += 90f;
                 }
                 alreadystarted = true;
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
+                if (this.transform.eulerAngles.z == 90 || this.transform.eulerAngles.z == 270)
+                {
+                    newrotation.z = 0;
+                }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.back;
-                    newrotation += new Vector3(-90f, 0f, 0f);
+                    newrotation.x += -90f;
                 }
                 alreadystarted = true;
             }
