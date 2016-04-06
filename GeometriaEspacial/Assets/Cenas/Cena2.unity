@@ -463,6 +463,30 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 16436803}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 381.600006
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 84.6999969
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 156.800003
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 42.4000015
+      objectReference: {fileID: 0}
+    - target: {fileID: 11485448, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
   m_IsPrefabParent: 0
@@ -601,7 +625,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb815a2517e79ab4a8ccce8247e25411, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aux: {x: 0, y: 0, z: 0}
 --- !u!1001 &1960782344
 Prefab:
   m_ObjectHideFlags: 0

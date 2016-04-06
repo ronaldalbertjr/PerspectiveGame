@@ -3,7 +3,6 @@ using System.Collections;
 
 public class CharacterBehaviour : MonoBehaviour 
 {
-    public Vector3 aux;
     bool alreadystarted = false;
     Vector3 newposition;
     Vector3 newrotation;
@@ -12,6 +11,8 @@ public class CharacterBehaviour : MonoBehaviour
     float movev;
     bool movinh;
     bool movinv;
+    int xl;
+    int zl;
     void Start ()
     {
     }
@@ -31,7 +32,7 @@ public class CharacterBehaviour : MonoBehaviour
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
-                    newrotation.x = 0;
+                    newrotation.x = 0f;
                 }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
@@ -44,12 +45,12 @@ public class CharacterBehaviour : MonoBehaviour
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
-                    newrotation.x = 0;
+                    newrotation.x = 0f;
                 }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.right;
-                    newrotation.z += -90f;
+                    newrotation.z -= 90f;
                 }
                 alreadystarted = true;
             }
@@ -58,9 +59,9 @@ public class CharacterBehaviour : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.RightArrow))
             {
-                if (this.transform.eulerAngles.z == 90 || this.transform.eulerAngles.z == 270)
+                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
-                    newrotation.z = 0;
+                    newrotation.z = 0f;
                 }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
@@ -71,14 +72,14 @@ public class CharacterBehaviour : MonoBehaviour
             }
             else if (Input.GetKey(KeyCode.LeftArrow))
             {
-                if (this.transform.eulerAngles.z == 90 || this.transform.eulerAngles.z == 270)
+                if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
-                    newrotation.z = 0;
+                    newrotation.z = 0f;
                 }
                 if (this.transform.position == newposition || alreadystarted == false)
                 {
                     newposition = this.transform.position + Vector3.back;
-                    newrotation.x += -90f;
+                    newrotation.x -= 90f;
                 }
                 alreadystarted = true;
             }
