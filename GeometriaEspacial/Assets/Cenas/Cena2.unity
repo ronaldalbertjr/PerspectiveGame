@@ -149,7 +149,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 9
+  orthographic size: 12
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -465,15 +465,15 @@ Prefab:
       objectReference: {fileID: 16436803}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 2.14630006e-07
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 381.600006
+      value: 578.799988
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 84.6999969
+      value: 78.3999939
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_SizeDelta.x
@@ -486,6 +486,10 @@ Prefab:
     - target: {fileID: 11485448, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_FontData.m_FontSize
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11490082, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_MatchWidthOrHeight
+      value: .5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
