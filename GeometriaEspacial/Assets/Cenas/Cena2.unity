@@ -313,7 +313,7 @@ Transform:
   m_LocalScale: {x: 100, y: 1, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
 --- !u!1001 &895813839
 Prefab:
   m_ObjectHideFlags: 0
@@ -465,23 +465,23 @@ Prefab:
       objectReference: {fileID: 16436803}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 2.14630006e-07
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 578.799988
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 78.3999939
+      value: 1.90000153
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_SizeDelta.x
-      value: 156.800003
+      value: 3.80000305
       objectReference: {fileID: 0}
     - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 42.4000015
+      value: -10.5999756
       objectReference: {fileID: 0}
     - target: {fileID: 11485448, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_FontData.m_FontSize
@@ -489,7 +489,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11490082, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
       propertyPath: m_MatchWidthOrHeight
-      value: .5
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .191250011
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22437892, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: .911666691
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
