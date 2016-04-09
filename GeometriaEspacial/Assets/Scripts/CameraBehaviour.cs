@@ -91,7 +91,7 @@ public class CameraBehaviour : MonoBehaviour
         else if (right)
         {
             view.text = "Right";
-            this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-5f, 2.5f, 25f), 0.5f);
+            this.transform.position = Vector3.Lerp(this.transform.position, new Vector3(-5f, 2.5f, 30f), 0.5f);
             this.transform.eulerAngles = Vector3.Lerp(this.transform.eulerAngles, new Vector3(0f, 180f, 0f), 0.5f);
             if (Input.GetKeyUp(KeyCode.W))
             {
