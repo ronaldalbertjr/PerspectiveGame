@@ -4,8 +4,8 @@ using System.Collections;
 public class CharacterBehaviour : MonoBehaviour 
 {
     bool alreadystarted = false;
-    Vector3 newposition;
-    Vector3 newrotation;
+    public Vector3 newposition;
+    public Vector3 newrotation;
     Quaternion qr;
     float moveh;
     float movev;
