@@ -616,6 +616,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
+--- !u!223 &1871143291 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 22377602, guid: 5e22d3f82f9f5684c91c797deea0161b,
+    type: 2}
+  m_PrefabInternal: {fileID: 998685831}
 --- !u!1 &1919401702
 GameObject:
   m_ObjectHideFlags: 0
@@ -815,23 +820,23 @@ Prefab:
     m_Modifications:
     - target: {fileID: 22425596, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22425596, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408444, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408444, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22408444, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22433152, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -909,6 +914,26 @@ Prefab:
       propertyPath: audio
       value: 
       objectReference: {fileID: 16436806}
+    - target: {fileID: 11485922, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: erase
+      value: 
+      objectReference: {fileID: 1871143291}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .788556814
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
   m_IsPrefabParent: 0

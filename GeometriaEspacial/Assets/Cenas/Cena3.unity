@@ -565,6 +565,34 @@ Prefab:
       propertyPath: audio
       value: 
       objectReference: {fileID: 16436806}
+    - target: {fileID: 11485922, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: erase
+      value: 
+      objectReference: {fileID: 2037294833}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_SizeDelta.x
+      value: -12
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchorMax.x
+      value: .793122828
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_AnchorMin.y
+      value: .45616588
+      objectReference: {fileID: 0}
+    - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
+      propertyPath: m_SizeDelta.y
+      value: -5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
   m_IsPrefabParent: 0
@@ -873,3 +901,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a41055f7f18d964db606245ef134130, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &2037294833 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 22377602, guid: 5e22d3f82f9f5684c91c797deea0161b,
+    type: 2}
+  m_PrefabInternal: {fileID: 998685831}

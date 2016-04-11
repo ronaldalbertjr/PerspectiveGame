@@ -1777,10 +1777,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1888266454}
   m_RootOrder: 2
-  m_AnchorMin: {x: .236450776, y: .445215583}
-  m_AnchorMax: {x: .768000007, y: .541869283}
-  m_AnchoredPosition: {x: 1.25001311, y: 3.50001144}
-  m_SizeDelta: {x: -10.5, y: -11}
+  m_AnchorMin: {x: .236450776, y: .45616588}
+  m_AnchorMax: {x: .780566096, y: .541869283}
+  m_AnchoredPosition: {x: 2.5, y: 1}
+  m_SizeDelta: {x: -8, y: -5}
   m_Pivot: {x: .5, y: .5}
 --- !u!114 &1080458039
 MonoBehaviour:
@@ -2599,7 +2599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 554741862}
   menu: {fileID: 1888266457}
-  erase: {fileID: 22377602, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
+  erase: {fileID: 2063191393}
   audio: {fileID: 16436806}
 --- !u!1 &1894973883 stripped
 GameObject:
@@ -3002,6 +3002,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!223 &2063191393 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 22377602, guid: 5e22d3f82f9f5684c91c797deea0161b,
+    type: 2}
+  m_PrefabInternal: {fileID: 135935360}
 --- !u!1 &2068105853 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 116906, guid: 3cf1a78c6aa1e6343b5418dfb5a33283, type: 2}
