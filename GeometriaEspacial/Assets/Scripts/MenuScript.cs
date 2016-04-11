@@ -27,4 +27,8 @@ public class MenuScript : MonoBehaviour
         Exit.enabled = false;
         Menu.enabled = true;
     }
+    public void CreditsPressed()
+    {
+        Application.LoadLevel("Creditos");
+    }
 }
