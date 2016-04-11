@@ -11,8 +11,11 @@ public class CreditsScript : MonoBehaviour
 	}
 	void Update () 
     {
-        h = Input.GetAxis("Horizontal");
-        v = Input.GetAxis("Vertical");
-        this.transform.eulerAngles += new Vector3(0f, -h, -v);
+        h = Input.GetAxis("Mouse X") * 5;
+        v = Input.GetAxis("Mouse Y") * 5;
+        if (Input.GetMouseButton(0))
+        {
+            this.transform.eulerAngles += new Vector3(0f, -h, v);
+        }
 	}
 }
