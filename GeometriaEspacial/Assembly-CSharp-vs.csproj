@@ -49,6 +49,7 @@
      <Compile Include="Assets\Scripts\AddColor.cs" />
      <Compile Include="Assets\Scripts\CameraBehaviour.cs" />
      <Compile Include="Assets\Scripts\CharacterBehaviour.cs" />
+     <Compile Include="Assets\Scripts\CreditsBackToMenu.cs" />
      <Compile Include="Assets\Scripts\CreditsScript.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />

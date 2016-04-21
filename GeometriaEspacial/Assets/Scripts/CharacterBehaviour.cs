@@ -13,9 +13,6 @@ public class CharacterBehaviour : MonoBehaviour
     bool movinv;
     int xl;
     int zl;
-    void Start ()
-    {
-    }
     void Update()
     {
         moveh = Input.GetAxis("Horizontal");
@@ -25,7 +22,7 @@ public class CharacterBehaviour : MonoBehaviour
             movinh = (moveh != 0 || movev == 0);
             movinv = (!movinh);
         }
-        newposition.y = this.transform.position.y;
+		newposition.y = this.transform.position.y;
         if (movinv) 
         {
             if (Input.GetKey(KeyCode.UpArrow))
@@ -91,4 +88,11 @@ public class CharacterBehaviour : MonoBehaviour
             this.transform.rotation = Quaternion.Slerp(this.transform.rotation, qr, 0.5f);
         }
    }
+	void OnCollisionEnter(Collision col)
+	{
+		if (col.gameObject.transform.position.y <= this.transform.position.y && col.gameObject.transform.position.y > this.transform.position.y - 0.5f)
+		{
+			this.transform.position += Vector3.up;
+		}
+	}
 }
