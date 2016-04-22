@@ -90,9 +90,9 @@ public class CharacterBehaviour : MonoBehaviour
    }
 	void OnCollisionEnter(Collision col)
 	{
-		if (col.gameObject.transform.position.y <= this.transform.position.y && col.gameObject.transform.position.y > this.transform.position.y - 0.5f)
+		if (col.gameObject.transform.position.y == this.transform.position.y )
 		{
-			this.transform.position += Vector3.up;
+			newposition += Vector3.up;
 		}
 	}
 }
