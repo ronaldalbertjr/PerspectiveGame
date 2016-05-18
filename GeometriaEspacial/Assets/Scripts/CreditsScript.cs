@@ -3,19 +3,22 @@ using System.Collections;
 
 public class CreditsScript : MonoBehaviour 
 {
-    float h;
-    float v;
+	Vector2 startTouchPosition, endTouchPosition, difference;
 	void Start () 
     {
 	
 	}
 	void Update () 
     {
-        h = Input.GetAxis("Mouse X") * 5;
-        v = Input.GetAxis("Mouse Y") * 5;
-        if (Input.GetMouseButton(0))
-        {
-            this.transform.eulerAngles += new Vector3(0f, -h, v);
-        }
+		if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Began) 
+		{
+			startTouchPosition = Input.GetTouch(0).position;
+		}
+        else if (Input.touchCount > 0 && Input.GetTouch (0).phase == TouchPhase.Moved) 
+		{
+			endTouchPosition = Input.GetTouch(0).position;
+			difference = endTouchPosition - startTouchPosition;
+			this.transform.eulerAngles += new Vector3(0f, -(difference.x * Time.deltaTime) , (difference.y * Time.deltaTime)); 
+		}
 	}
 }
