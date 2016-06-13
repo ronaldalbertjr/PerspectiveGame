@@ -12,7 +12,7 @@ Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\
 Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
 Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.174 seconds
+- Completed reload, in  0.095 seconds
 <RI> Initializing input.
 XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
@@ -21,4 +21,22 @@ desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.Core.dll (this message is harmless)
 Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.dll (this message is harmless)
 Setting up 1 worker threads for Enlighten.
-  Thread -> id: c38 -> priority: 1 
+  Thread -> id: 854 -> priority: 1 
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.540008 ms
+
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 555.
+Total: 0.325430 ms (FindLiveObjects: 0.059868 ms CreateObjectMapping: 0.017105 ms MarkObjects: 0.205264 ms  DeleteObjects: 0.041908 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.038535 ms
+
+Unloading 49 unused Assets to reduce memory usage. Loaded Objects now: 823.
+Total: 0.692340 ms (FindLiveObjects: 0.090658 ms CreateObjectMapping: 0.053454 ms MarkObjects: 0.468260 ms  DeleteObjects: 0.078684 ms)
+
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.324384 ms
+
+Unloading 98 unused Assets to reduce memory usage. Loaded Objects now: 823.
+Total: 0.788986 ms (FindLiveObjects: 0.106908 ms CreateObjectMapping: 0.056875 ms MarkObjects: 0.480661 ms  DeleteObjects: 0.143685 ms)
+

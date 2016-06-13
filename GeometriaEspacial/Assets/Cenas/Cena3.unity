@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bfab5078169b04d97ac5cd4ab6ad64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view: {fileID: 441916140}
+  view: {fileID: 0}
 --- !u!82 &16436806
 AudioSource:
   m_ObjectHideFlags: 0
@@ -396,17 +396,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
---- !u!223 &324705699 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 22347128, guid: 5e22d3f82f9f5684c91c797deea0161b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1938704850}
---- !u!114 &441916140 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11450004, guid: 5e22d3f82f9f5684c91c797deea0161b,
-    type: 2}
-  m_PrefabInternal: {fileID: 1938704850}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &1312078728
 Prefab:
   m_ObjectHideFlags: 0
@@ -513,7 +502,7 @@ Prefab:
     - target: {fileID: 11485922, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: erase
       value: 
-      objectReference: {fileID: 324705699}
+      objectReference: {fileID: 1938704851}
     - target: {fileID: 22450320, guid: a3adf408e0c4f12448a93733a0dbd98f, type: 2}
       propertyPath: m_AnchoredPosition.x
       value: 0
@@ -869,6 +858,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e22d3f82f9f5684c91c797deea0161b, type: 2}
   m_IsPrefabParent: 0
+--- !u!223 &1938704851 stripped
+Canvas:
+  m_PrefabParentObject: {fileID: 22332978, guid: 5e22d3f82f9f5684c91c797deea0161b,
+    type: 2}
+  m_PrefabInternal: {fileID: 1938704850}
 --- !u!1001 &1960782344
 Prefab:
   m_ObjectHideFlags: 0

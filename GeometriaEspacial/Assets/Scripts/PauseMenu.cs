@@ -15,17 +15,6 @@ public class PauseMenu : MonoBehaviour
         slider.value = audio.volume;
         character = GameObject.Find("Char");
 	}
-	void Update ()
-    {
-	    if(Input.GetKey(KeyCode.Escape))
-        {
-            menu.enabled = true;
-            erase.enabled = false;
-            character.transform.eulerAngles = character.GetComponent<CharacterBehaviour>().newrotation;
-            character.transform.position = character.GetComponent<CharacterBehaviour>().newposition;
-            Destroy(character.GetComponent<CharacterBehaviour>());
-        }    
-	}
     public void OnResume()
     {
         menu.enabled = false;
@@ -39,5 +28,13 @@ public class PauseMenu : MonoBehaviour
     public void OnSlide()
     {
         audio.volume = slider.value;
+    }
+    public void OnPause()
+    {
+        menu.enabled = true;
+        erase.enabled = false;
+        character.transform.eulerAngles = character.GetComponent<CharacterBehaviour>().newrotation;
+        character.transform.position = character.GetComponent<CharacterBehaviour>().newposition;
+        Destroy(character.GetComponent<CharacterBehaviour>());
     }
 }

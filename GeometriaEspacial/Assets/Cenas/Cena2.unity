@@ -184,7 +184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7bfab5078169b04d97ac5cd4ab6ad64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  view: {fileID: 525989991}
+  view: {fileID: 0}
 --- !u!82 &16436806
 AudioSource:
   m_ObjectHideFlags: 0
@@ -426,15 +426,9 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!223 &525989990 stripped
 Canvas:
-  m_PrefabParentObject: {fileID: 22347128, guid: 5e22d3f82f9f5684c91c797deea0161b,
+  m_PrefabParentObject: {fileID: 22332978, guid: 5e22d3f82f9f5684c91c797deea0161b,
     type: 2}
   m_PrefabInternal: {fileID: 525989989}
---- !u!114 &525989991 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 11450004, guid: 5e22d3f82f9f5684c91c797deea0161b,
-    type: 2}
-  m_PrefabInternal: {fileID: 525989989}
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
 --- !u!1001 &895813839
 Prefab:
   m_ObjectHideFlags: 0

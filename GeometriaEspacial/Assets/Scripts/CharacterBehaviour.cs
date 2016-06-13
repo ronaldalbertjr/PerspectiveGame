@@ -25,7 +25,7 @@ public class CharacterBehaviour : MonoBehaviour
 		newposition.y = this.transform.position.y;
         if (movinv) 
         {
-            if (Input.GetKey(KeyCode.UpArrow))
+            if (Input.touchCount > 0 && Input.GetTouch(0).position.y < (Screen.height/2) - 200)
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -38,7 +38,7 @@ public class CharacterBehaviour : MonoBehaviour
                 }
                 alreadystarted = true;
             }
-            else if (Input.GetKey(KeyCode.DownArrow))
+            else if (Input.touchCount > 0 && Input.GetTouch(0).position.y > (Screen.height / 2) + 200)
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -54,7 +54,7 @@ public class CharacterBehaviour : MonoBehaviour
         }
         if (movinh)
         {
-            if (Input.GetKey(KeyCode.RightArrow))
+            if (Input.touchCount > 0 && Input.GetTouch(0).position.y > (Screen.width / 2) + 200)
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -67,7 +67,7 @@ public class CharacterBehaviour : MonoBehaviour
                 }
                 alreadystarted = true;
             }
-            else if (Input.GetKey(KeyCode.LeftArrow))
+            else if (Input.touchCount > 0 && Input.GetTouch(0).position.y < (Screen.height / 2) - 200)
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
