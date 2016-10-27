@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\CreditsBackToMenu.cs" />
      <Compile Include="Assets\Scripts\CreditsScript.cs" />
      <Compile Include="Assets\Scripts\MenuScript.cs" />
+     <Compile Include="Assets\Scripts\ObstacleScript.cs" />
      <Compile Include="Assets\Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\RestartLevel.cs" />
      <Compile Include="Assets\Scripts\Win.cs" />

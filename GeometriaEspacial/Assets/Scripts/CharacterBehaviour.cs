@@ -6,6 +6,8 @@ public class CharacterBehaviour : MonoBehaviour
     bool alreadystarted = false;
     public Vector3 newposition;
     public Vector3 newrotation;
+    [HideInInspector]
+    public bool canGoUp;
     Quaternion qr;
     float moveh;
     float movev;
@@ -36,6 +38,11 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.left;
                     newrotation.z += 90f;
                 }
+                if(canGoUp)
+                {
+                    newposition += Vector3.up;
+                    canGoUp = false;
+                }
                 alreadystarted = true;
             }
             else if (Input.touchCount > 0 && Input.GetTouch(0).position.y > (Screen.height / 2) + 200)
@@ -48,6 +55,11 @@ public class CharacterBehaviour : MonoBehaviour
                 {
                     newposition = this.transform.position + Vector3.right;
                     newrotation.z -= 90f;
+                }
+                 if(canGoUp)
+                {
+                    newposition += Vector3.up;
+                    canGoUp = false;
                 }
                 alreadystarted = true;
             }
@@ -65,6 +77,11 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.forward;
                     newrotation.x += 90f;
                 }
+                 if(canGoUp)
+                {
+                    newposition += Vector3.up;
+                    canGoUp = false;
+                }
                 alreadystarted = true;
             }
             else if (Input.touchCount > 0 && Input.GetTouch(0).position.y < (Screen.height / 2) - 200)
@@ -78,21 +95,20 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.back;
                     newrotation.x -= 90f;
                 }
+                 if(canGoUp)
+                {
+                    newposition += Vector3.up;
+                    canGoUp = false;
+                }
                 alreadystarted = true;
             }
         }
          qr = Quaternion.Euler(newrotation);
         if (alreadystarted)
         {
-            this.transform.position = Vector3.Slerp(this.transform.position, newposition, 0.5f);
-            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, qr, 0.5f);
+            this.transform.position = Vector3.Lerp(this.transform.position, newposition, 0.5f);
+            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, qr, 0.5f);
         }
    }
-	void OnCollisionEnter(Collision col)
-	{
-		if (col.gameObject.transform.position.y == this.transform.position.y )
-		{
-			newposition += Vector3.up;
-		}
-	}
+	
 }

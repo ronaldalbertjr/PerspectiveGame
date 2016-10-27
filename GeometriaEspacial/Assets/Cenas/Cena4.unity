@@ -254,92 +254,6 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
---- !u!1001 &182010299
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: -8.60000038
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: .377098024
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: -.230082184
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: .100665323
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: .891473949
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: 16.7000008
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchorMin.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchorMin.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchorMax.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_AnchorMax.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_Pivot.x
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 22482586, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: m_Pivot.y
-      value: .5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2086082, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-      propertyPath: field of view
-      value: 65
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: eee143162741af64f8852e9c804c31a2, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &279099938
 GameObject:
   m_ObjectHideFlags: 0
@@ -682,7 +596,7 @@ GameObject:
   - 114: {fileID: 1919401709}
   m_Layer: 0
   m_Name: Char
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -698,6 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0653cfd466946d418ea86d81c826f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: f2562981de703e040bc9322782907b19, type: 2}
   c: {r: 1, g: .93650794, b: 0, a: 0}
 --- !u!54 &1919401704
 Rigidbody:
@@ -782,6 +697,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   newposition: {x: 0, y: 0, z: 0}
   newrotation: {x: 0, y: 0, z: 0}
+  canGoUp: 0
 --- !u!1001 &1960782344
 Prefab:
   m_ObjectHideFlags: 0
