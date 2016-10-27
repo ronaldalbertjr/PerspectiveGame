@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class CharacterBehaviour : MonoBehaviour 
+public class CharacterBehaviour : MonoBehaviour
 {
     bool alreadystarted = false;
+    [HideInInspector]
     public Vector3 newposition;
+    [HideInInspector]
     public Vector3 newrotation;
     [HideInInspector]
     public bool canGoUp;
@@ -24,10 +26,10 @@ public class CharacterBehaviour : MonoBehaviour
             movinh = (moveh != 0 || movev == 0);
             movinv = (!movinh);
         }
-		newposition.y = this.transform.position.y;
-        if (movinv) 
+        newposition.y = this.transform.position.y;
+        if (movinv)
         {
-            if (Input.touchCount > 0 && Input.GetTouch(0).position.y < (Screen.height/2) - 200)
+            if (Input.GetKey(KeyCode.UpArrow))
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -38,14 +40,14 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.left;
                     newrotation.z += 90f;
                 }
-                if(canGoUp)
+                if (canGoUp)
                 {
                     newposition += Vector3.up;
                     canGoUp = false;
                 }
                 alreadystarted = true;
             }
-            else if (Input.touchCount > 0 && Input.GetTouch(0).position.y > (Screen.height / 2) + 200)
+            else if (Input.GetKey(KeyCode.DownArrow))
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -56,7 +58,7 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.right;
                     newrotation.z -= 90f;
                 }
-                 if(canGoUp)
+                if (canGoUp)
                 {
                     newposition += Vector3.up;
                     canGoUp = false;
@@ -66,7 +68,7 @@ public class CharacterBehaviour : MonoBehaviour
         }
         if (movinh)
         {
-            if (Input.touchCount > 0 && Input.GetTouch(0).position.y > (Screen.width / 2) + 200)
+            if (Input.GetKey(KeyCode.RightArrow))
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -77,14 +79,14 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.forward;
                     newrotation.x += 90f;
                 }
-                 if(canGoUp)
+                if (canGoUp)
                 {
                     newposition += Vector3.up;
                     canGoUp = false;
                 }
                 alreadystarted = true;
             }
-            else if (Input.touchCount > 0 && Input.GetTouch(0).position.y < (Screen.height / 2) - 200)
+            else if (Input.GetKey(KeyCode.LeftArrow))
             {
                 if (this.transform.eulerAngles.x == 90 || this.transform.eulerAngles.x == 270)
                 {
@@ -95,7 +97,7 @@ public class CharacterBehaviour : MonoBehaviour
                     newposition = this.transform.position + Vector3.back;
                     newrotation.x -= 90f;
                 }
-                 if(canGoUp)
+                if (canGoUp)
                 {
                     newposition += Vector3.up;
                     canGoUp = false;
@@ -103,12 +105,18 @@ public class CharacterBehaviour : MonoBehaviour
                 alreadystarted = true;
             }
         }
-         qr = Quaternion.Euler(newrotation);
+        qr = Quaternion.Euler(newrotation);
         if (alreadystarted)
         {
-            this.transform.position = Vector3.Lerp(this.transform.position, newposition, 0.5f);
-            this.transform.rotation = Quaternion.Lerp(this.transform.rotation, qr, 0.5f);
+            this.transform.position = Vector3.Slerp(this.transform.position, newposition, 0.5f);
+            this.transform.rotation = Quaternion.Slerp(this.transform.rotation, qr, 0.5f);
         }
-   }
-	
+    }
+    void OnCollisionEnter(Collision col)
+    {
+        if (col.gameObject.transform.position.y == this.transform.position.y)
+        {
+            newposition += Vector3.up;
+        }
+    }
 }

@@ -5,20 +5,20 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 6
   AndroidProfiler: 0
-  defaultScreenOrientation: 2
+  defaultScreenOrientation: 4
   targetDevice: 2
   targetGlesGraphics: -1
   targetIOSGraphics: -1
   targetResolution: 0
   accelerometerFrequency: 60
-  companyName: TogetherEnterprises
-  productName: Perspective
+  companyName: DefaultCompany
+  productName: GeometriaEspacial
   cloudProjectId: 
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
-  m_ShowUnitySplashScreen: 1
-  defaultScreenWidth: 1440
-  defaultScreenHeight: 900
+  m_ShowUnitySplashScreen: 0
+  defaultScreenWidth: 1024
+  defaultScreenHeight: 768
   defaultScreenWidthWeb: 960
   defaultScreenHeightWeb: 600
   m_RenderingPath: 1
@@ -31,7 +31,7 @@ PlayerSettings:
   iosShowActivityIndicatorOnLoading: -1
   androidShowActivityIndicatorOnLoading: -1
   iosAppInBackgroundBehavior: 0
-  displayResolutionDialog: 2
+  displayResolutionDialog: 0
   allowedAutorotateToPortrait: 1
   allowedAutorotateToPortraitUpsideDown: 1
   allowedAutorotateToLandscapeRight: 1
@@ -40,7 +40,7 @@ PlayerSettings:
   use32BitDisplayBuffer: 1
   disableDepthAndStencilBuffers: 0
   defaultIsFullScreen: 1
-  defaultIsNativeResolution: 0
+  defaultIsNativeResolution: 1
   runInBackground: 0
   captureSingleScreen: 0
   Override IPod Music: 0
@@ -70,23 +70,18 @@ PlayerSettings:
   psp2PowerMode: 0
   psp2AcquireBGM: 1
   m_SupportedAspectRatios:
-    4:3: 0
-    5:4: 0
-    16:10: 0
+    4:3: 1
+    5:4: 1
+    16:10: 1
     16:9: 1
-<<<<<<< Updated upstream
     Others: 1
-  bundleIdentifier: com.TogetherEnterprises.Perspective
-=======
-    Others: 0
   bundleIdentifier: com.Company.ProductName
->>>>>>> Stashed changes
   bundleVersion: 1.0
   preloadedAssets: []
   metroEnableIndependentInputSource: 0
   metroEnableLowLatencyPresentationAPI: 0
   xboxOneDisableKinectGpuReservation: 0
-  productGUID: c76880a48e9744842b1addffa8e78eff
+  productGUID: 10a079e309488284d9d6c8b3ebe7676c
   AndroidBundleVersionCode: 1
   AndroidMinSdkVersion: 9
   AndroidPreferredInstallLocation: 1
@@ -145,7 +140,7 @@ PlayerSettings:
   m_BuildTargetIcons:
   - m_BuildTarget: 
     m_Icons:
-    - m_Icon: {fileID: 2800000, guid: 0e05e7376f6ebeb44a4683331b652322, type: 3}
+    - m_Icon: {fileID: 2800000, guid: bc12bf0a1ce625f4e8a752b41dc6729e, type: 3}
       m_Size: 128
   m_BuildTargetBatching: []
   webPlayerTemplate: APPLICATION:Default
