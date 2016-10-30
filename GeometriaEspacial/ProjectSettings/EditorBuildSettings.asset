@@ -8,6 +8,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Cenas/Menu.unity
   - enabled: 1
+    path: Assets/Cenas/ChooseLevel.unity
+  - enabled: 1
     path: Assets/Cenas/Cena1.unity
   - enabled: 1
     path: Assets/Cenas/Cena2.unity

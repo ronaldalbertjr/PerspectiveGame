@@ -1,17 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MenuScript : MonoBehaviour
 {
     public Canvas Menu;
     public Canvas Exit;
+    public Canvas loadingPanel;
     void Start ()
     {
         Exit.enabled = false;
+        loadingPanel.enabled = false;
 	}
     public void PlayPressed()
     {
-        Application.LoadLevel("Cena1");
+        StartCoroutine(LoadSceneWithLoadingScreen("Cena1"));
+    }
+    public void ChooseLevelPressed()
+    {
+        StartCoroutine(LoadSceneWithLoadingScreen("ChooseLevel"));
     }
     public void ExitPressed()
     {
@@ -29,6 +37,18 @@ public class MenuScript : MonoBehaviour
     }
     public void CreditsPressed()
     {
-        Application.LoadLevel("Creditos");
+        StartCoroutine(LoadSceneWithLoadingScreen("Creditos"));
+    }
+
+    IEnumerator LoadSceneWithLoadingScreen(string sceneString)
+    {
+        AsyncOperation async = SceneManager.LoadSceneAsync(sceneString);
+        async.allowSceneActivation = true;
+        while(!async.isDone)
+        {
+            loadingPanel.enabled = true;
+            loadingPanel.GetComponentInChildren<Text>().color = new Color(loadingPanel.GetComponentInChildren<Text>().color.r, loadingPanel.GetComponentInChildren<Text>().color.g, loadingPanel.GetComponentInChildren<Text>().color.b, Mathf.PingPong(Time.time, 1));
+            yield return null;
+        }
     }
 }

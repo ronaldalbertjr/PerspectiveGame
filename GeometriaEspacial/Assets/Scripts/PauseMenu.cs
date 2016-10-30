@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
     public Slider slider;
     public Canvas menu;
     public Canvas erase;
-    public AudioSource audio;
+    public Canvas loadingPanel;
+    public AudioSource mainAudio;
     void Start()
     {
         menu.enabled = false;
-        slider.value = audio.volume;
+        loadingPanel.enabled = false;
+        slider.value = mainAudio.volume;
     }
     void Update()
     {
@@ -30,11 +33,23 @@ public class PauseMenu : MonoBehaviour
     }
     public void OnBackToMenu()
     {
-        Application.LoadLevel("Menu");
+        StartCoroutine(LoadSceneWithLoadingScreen("Menu"));
         Time.timeScale = 1;
     }
     public void OnSlide()
     {
-        audio.volume = slider.value;
+        mainAudio.volume = slider.value;
+    }
+
+    IEnumerator LoadSceneWithLoadingScreen(string sceneString)
+    {
+        AsyncOperation async = SceneManager.LoadSceneAsync(sceneString);
+        async.allowSceneActivation = true;
+        while (!async.isDone)
+        {
+            loadingPanel.enabled = true;
+            loadingPanel.GetComponentInChildren<Text>().color = new Color(loadingPanel.GetComponentInChildren<Text>().color.r, loadingPanel.GetComponentInChildren<Text>().color.g, loadingPanel.GetComponentInChildren<Text>().color.b, Mathf.PingPong(Time.time, 1));
+            yield return null;
+        }
     }
 }

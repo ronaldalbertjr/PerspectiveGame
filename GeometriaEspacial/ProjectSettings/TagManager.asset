@@ -3,7 +3,15 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Forma1
+  - Forma2
+  - Forma3
+  - Forma4
+  - Forma1Locked
+  - Forma2Locked
+  - Forma3Locked
+  - Forma4Locked
   layers:
   - Default
   - TransparentFX

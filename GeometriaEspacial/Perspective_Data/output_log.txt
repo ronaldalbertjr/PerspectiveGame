@@ -1,48 +1,56 @@
-Initialize engine version: 5.0.4f1 (1d75c08f1c9c)
+Initialize engine version: 5.4.1f1 (649f48bbbf0f)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.0]
-    Renderer: AMD Radeon HD 6450 (ID=0x6779)
-    Vendor:   ATI
-    VRAM:     1011 MB
+    Renderer: Intel(R) HD Graphics 4000 (ID=0x166)
+    Vendor:   Intel
+    VRAM:     912 MB
 Begin MonoManager ReloadAssembly
-Platform assembly: C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.dll (this message is harmless)
-Loading C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\Assembly-CSharp.dll (this message is harmless)
-Loading C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Platform assembly: C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll (this message is harmless)
-Loading C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.041 seconds
-desktop: 1440x900 60Hz; virtual: 1440x900 at 0,0
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+- Completed reload, in  0.152 seconds
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\usuario\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.dll (this message is harmless)
 <RI> Initializing input.
 <RI> Input initialized.
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
 <RI> Initialized touch support.
-Platform assembly: C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\ronald.junior\Documents\PerspectiveGame\GeometriaEspacial\Perspective_Data\Managed\System.dll (this message is harmless)
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1368 -> priority: 1 
-  Thread -> id: 6fc -> priority: 1 
+UnloadTime: 1.341489 ms
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1c70 -> priority: 1 
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 10.216186 ms
+
+Unloading 79 unused Assets to reduce memory usage. Loaded Objects now: 5565.
+Total: 9.758616 ms (FindLiveObjects: 0.434048 ms CreateObjectMapping: 0.501187 ms MarkObjects: 2.393897 ms  DeleteObjects: 6.427345 ms)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 3.178179 ms
+
+Unloading 2845 unused Assets to reduce memory usage. Loaded Objects now: 1050.
+Total: 2.192909 ms (FindLiveObjects: 0.199277 ms CreateObjectMapping: 0.188159 ms MarkObjects: 0.366910 ms  DeleteObjects: 1.436851 ms)
+
 Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.845099 ms
+UnloadTime: 2.613701 ms
 
-Unloading 78 unused Assets to reduce memory usage. Loaded Objects now: 525.
-Total: 0.236658 ms (FindLiveObjects: 0.061881 ms CreateObjectMapping: 0.012980 ms MarkObjects: 0.135233 ms  DeleteObjects: 0.025658 ms)
+Unloading 163 unused Assets to reduce memory usage. Loaded Objects now: 616.
+Total: 7.794064 ms (FindLiveObjects: 0.039770 ms CreateObjectMapping: 0.035921 ms MarkObjects: 0.325429 ms  DeleteObjects: 7.392088 ms)
 
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.748916 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.211488 ms
 
-Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 510.
-Total: 0.224886 ms (FindLiveObjects: 0.039543 ms CreateObjectMapping: 0.031091 ms MarkObjects: 0.133724 ms  DeleteObjects: 0.019620 ms)
+Unloading 51 unused Assets to reduce memory usage. Loaded Objects now: 270.
+Total: 8.110514 ms (FindLiveObjects: 0.027796 ms CreateObjectMapping: 0.024802 ms MarkObjects: 0.388719 ms  DeleteObjects: 7.668768 ms)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.796308 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.031026 ms
 
-Unloading 77 unused Assets to reduce memory usage. Loaded Objects now: 525.
-Total: 0.272881 ms (FindLiveObjects: 0.036525 ms CreateObjectMapping: 0.013583 ms MarkObjects: 0.174173 ms  DeleteObjects: 0.047995 ms)
-
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.651716 ms
-
-Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 510.
-Total: 0.218547 ms (FindLiveObjects: 0.038336 ms CreateObjectMapping: 0.028374 ms MarkObjects: 0.133724 ms  DeleteObjects: 0.017809 ms)
+Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 616.
+Total: 7.660215 ms (FindLiveObjects: 0.044901 ms CreateObjectMapping: 0.038914 ms MarkObjects: 0.348522 ms  DeleteObjects: 7.227449 ms)
 
